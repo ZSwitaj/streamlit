@@ -1,7 +1,7 @@
 import pandas as pd
 from pytrends.request import TrendReq
 import streamlit as st
-from datetime import date
+from datetime import date, datetime
 
 
 def getTrendData(keyword):
