@@ -1,7 +1,7 @@
 import pandas as pd
 from pytrends.request import TrendReq
 import streamlit as st
-from datetime import date, datetime
+from datetime import date
 
 
 def getTrendData(keyword):
@@ -25,7 +25,7 @@ def getTrendData(keyword):
     #Start date of last year's time frame
     start_date = st.sidebar.date_input(
         "Start of last year's time frame",
-         value = datetime.date(2020,9,1),
+         value = date(2020,9,1),
          key = 'start date')
     
    # start_date = date(2020,9,1)
