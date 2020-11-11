@@ -9,8 +9,8 @@ import streamlit as st
 import YOY_searchTrends_SL as trends
 
 kw_dict = {
-    "Timberland": "/m/05kv16",
-    "Timberland Boots": "Timberland Boots",
+    "Timberland": "/m/05kv16"
+ """   "Timberland Boots": "Timberland Boots",
     "UGG": "/m/06wccjq",
     "Dr Martens": "/m/01lsm6",
     "Merrell": "/m/0kqrz3",
@@ -31,6 +31,7 @@ kw_dict = {
     "Dick's Sports": "/m/06fgv_",
     "Boot": "/m/01b638",
     "Outerwear": "Outerwear"
+    """
     }
 
 lst_keywords = []
