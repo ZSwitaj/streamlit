@@ -3,25 +3,6 @@ from pytrends.request import TrendReq
 import streamlit as st
 from datetime import date
 
-
-def getTrendData(keyword):
-
-    """
-
-    Parameters
-    ----------
-    keyword : str
-        Keyword to get trend data for
-
-    Returns
-    -------
-    yoyIncrease : float
-        Year-over-year increase for given keyword
-
-    """
-
-    dataset= []
-    
     #Start date of last year's time frame
     start_date = st.sidebar.date_input(
         "Start of last year's time frame",
@@ -39,7 +20,25 @@ def getTrendData(keyword):
     end_date = date(2020,9,26)
     
     timeFrame = start_date.strftime('%Y-%m-%d')+' ' + end_date.strftime("%Y-%m-%d")
-    
+
+def getTrendData(keyword, timeframe = timeframe):
+
+    """
+
+    Parameters
+    ----------
+    keyword : str
+        Keyword to get trend data for
+
+    Returns
+    -------
+    yoyIncrease : float
+        Year-over-year increase for given keyword
+
+    """
+
+    dataset= []
+   
     pytrends = TrendReq(hl='en-US', tz=360) #Create pytrend query
     
     pytrends.build_payload(kw_list = [keyword],      # Build payload
