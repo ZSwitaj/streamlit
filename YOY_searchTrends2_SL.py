@@ -23,10 +23,12 @@ def getTrendData(keyword):
     dataset= []
     
     #Start date of last year's time frame
-    start_date = st.sidebar.date_input(
-        "Start of last year's time frame",
-        value = date(2020,9,1),
-        key = 'start date')
+#    start_date = st.sidebar.date_input(
+ #       "Start of last year's time frame",
+  #      value = date(2020,9,1),
+   #     key = 'start date')
+    
+    start_date = date(2020,9,1)
     
     #End date of this year's time frame
 #    end_date = st.sidebar.date_input(
