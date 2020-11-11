@@ -4,22 +4,21 @@ import streamlit as st
 from datetime import date
 
     #Start date of last year's time frame
-    start_date = st.sidebar.date_input(
-        "Start of last year's time frame",
-         value = date(2020,9,1),
-         key = 'a')
+start_date = st.sidebar.date_input(
+    "Start of last year's time frame",
+     value = date(2020,9,1),
+     key = 'a')
     
    # start_date = date(2020,9,1)
     
     #End date of this year's time frame
-#    end_date = st.sidebar.date_input(
- #       "End of this year's time frame",
-  #       value = date(2020,9,26),
-   #      key = 'end date')
-    
-    end_date = date(2020,9,26)
-    
-    timeFrame = start_date.strftime('%Y-%m-%d')+' ' + end_date.strftime("%Y-%m-%d")
+end_date = st.sidebar.date_input(       
+    "End of this year's time frame",
+    value = date(2020,9,26),
+    key = 'end date')
+
+
+timeFrame = start_date.strftime('%Y-%m-%d')+' ' + end_date.strftime("%Y-%m-%d")
 
 def getTrendData(keyword, timeframe = timeframe):
 
