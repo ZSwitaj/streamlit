@@ -20,7 +20,7 @@ end_date = st.sidebar.date_input(
 
 timeFrame = start_date.strftime('%Y-%m-%d')+' ' + end_date.strftime("%Y-%m-%d")
 
-def getTrendData(keyword, timeframe = timeframe):
+def getTrendData(keyword, timeframe = timeFrame):
 
     """
 
