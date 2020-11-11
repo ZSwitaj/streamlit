@@ -113,9 +113,9 @@ for topic in kw_dict:
 
 lst_values = []
 
-for topic in kw_dict:
-    print("Calculting {} results".format(topic))
-    lst_values.append(round(getTrendData(kw_dict[topic]),1))
+# for topic in kw_dict:
+#    print("Calculting {} results".format(topic))
+#    lst_values.append(round(getTrendData(kw_dict[topic]),1))
 
 print("Combining...")
 res = dict(zip(lst_keywords, lst_values))
