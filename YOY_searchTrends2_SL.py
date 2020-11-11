@@ -50,3 +50,6 @@ res_df = pd.DataFrame.from_dict(res, orient = 'index', columns = ['YOY Change'])
 res_df = res_df.transpose()
 
 # res_df.to_csv(r'output.csv')
+
+st.title('Google Trends Data for Timberland')
+st.write(res)
