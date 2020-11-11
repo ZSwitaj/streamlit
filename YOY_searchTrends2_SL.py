@@ -9,29 +9,28 @@ import streamlit as st
 import YOY_searchTrends_SL as trends
 
 kw_dict = {
-    "Timberland": "/m/05kv16"
- """   "Timberland Boots": "Timberland Boots",
-    "UGG": "/m/06wccjq",
-    "Dr Martens": "/m/01lsm6",
-    "Merrell": "/m/0kqrz3",
-    "The North Face": "/m/04n92b",
-    "Patagonia": "/m/0g152j",
-    "Allbirds": "/g/11g6j4k3hl",
-    "Vans": "/m/04kbwy",
-    "Amazon": "/m/0mgkg ",
-    "Walmart": "/m/0841v",
-    "Target": "/m/01b39j",
-    "Zappos": "/m/02dfb9",
-    "Foot Locker": "/m/08fhy9",
-    "Journeys": "/m/03cbgd",
-    "DSW": "/m/0flp70",
-    "Nordstrom": "/m/01fc_q",
-    "Macy's": "/m/01pkxd ",
-    "REI": "/m/02nx4d",
-    "Dick's Sports": "/m/06fgv_",
-    "Boot": "/m/01b638",
-    "Outerwear": "Outerwear"
-    """
+    "Timberland": "/m/05kv16",
+    "Timberland Boots": "Timberland Boots"
+#    "UGG": "/m/06wccjq",
+#    "Dr Martens": "/m/01lsm6",
+#    "Merrell": "/m/0kqrz3",
+#    "The North Face": "/m/04n92b",
+#    "Patagonia": "/m/0g152j",
+#    "Allbirds": "/g/11g6j4k3hl",
+#    "Vans": "/m/04kbwy",
+#    "Amazon": "/m/0mgkg ",
+#    "Walmart": "/m/0841v",
+#    "Target": "/m/01b39j",
+#    "Zappos": "/m/02dfb9",
+#    "Foot Locker": "/m/08fhy9",
+#    "Journeys": "/m/03cbgd",
+#    "DSW": "/m/0flp70",
+#    "Nordstrom": "/m/01fc_q",
+#    "Macy's": "/m/01pkxd ",
+#    "REI": "/m/02nx4d",
+#    "Dick's Sports": "/m/06fgv_",
+#    "Boot": "/m/01b638",
+#    "Outerwear": "Outerwear"
     }
 
 lst_keywords = []
