@@ -5,7 +5,7 @@ Created on Tue Nov 10 14:48:54 2020
 @author: zswitaj
 """
 import pandas as pd
-import YOY_searchTrends as trends
+import YOY_searchTrends_SL as trends
 
 kw_dict = {
     "Timberland": "/m/05kv16",
