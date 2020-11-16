@@ -43,8 +43,7 @@ def getCorrFactors(lastYearData, thisYearData):
     for i in range(len(lastYearTail)):
         correctionFactors.append((lastYearTail.iloc[i][0]/thisYearHead.iloc[i][0]))
         i += 1
-
-    print(sum(correctionFactors)/len(correctionFactors))
+        
     return sum(correctionFactors)/len(correctionFactors)
 
 def correctDailyData(data, correctionFactor):
@@ -63,8 +62,8 @@ def calcYOY(keyword, this_start_date = this_start_date, this_end_date = this_end
     thisYearAns = thisYearPlus.tail(timeRange).mean(axis=0)[0]
     lastYearAns = lastYearCorr.head(timeRange).mean(axis=0)[0]
     
-    print(thisYearPlus.tail(timeRange).mean(axis=0)[0])
-    print(lastYearCorr.head(timeRange).mean(axis=0)[0])
+   # print(thisYearPlus.tail(timeRange).mean(axis=0)[0])
+   # print(lastYearCorr.head(timeRange).mean(axis=0)[0])
 
     yoyIncrease = ((thisYearAns - lastYearAns)/ lastYearAns) * 100
     
@@ -73,55 +72,55 @@ def calcYOY(keyword, this_start_date = this_start_date, this_end_date = this_end
 kw_dict = {
     "Timberland": "/m/05kv16",
     "Timberland Boots": "Timberland Boots",
-    "UGG": "/m/06wccjq",
-    "Dr Martens": "/m/01lsm6",
-    "Merrell": "/m/0kqrz3",
-    "The North Face": "/m/04n92b",
-    "Patagonia": "/m/0g152j",
-    "Allbirds": "/g/11g6j4k3hl",
-    "Vans": "/m/04kbwy",
-    "Amazon": "/m/0mgkg ",
-    "Walmart": "/m/0841v",
-    "Target": "/m/01b39j",
-    "Zappos": "/m/02dfb9",
-    "Foot Locker": "/m/08fhy9",
-    "Journeys": "/m/03cbgd",
-    "DSW": "/m/0flp70",
-    "Nordstrom": "/m/01fc_q",
-    "Macy's": "/m/01pkxd ",
-    "REI": "/m/02nx4d",
-    "Dick's Sports": "/m/06fgv_",
-    "Boot": "/m/01b638",
-    "Outerwear": "Outerwear",
-    "Sneakers":"/m/09kjlm",
-    "Boat Shoes":"/m/05q55b9",
-    "Sandals":"/m/03nfch",
-    "Hiking":"/m/012v4j",
-    "Sustainability":"/m/0hkst",
-    "Back to school":"Back to school",
-    "Jimmy Choo":"/m/0hkst",
-    "Timberland PRO":"Timberland PRO",
-    "Red Wing":"/m/0603n6",
-    "Carhartt":"/m/08vntw",
-    "Wolverine":"/m/06ddr7",
-    "Dickies":"/m/03pjr5",
-    "Duluth":"/g/11f30mhkr2",
-    "Lowe's":"/m/037922",
-    "Home Depot":"/m/01zj1t",
-    "Grainger":"/m/0cp307",
-    # "Bobs":"Bobs",
-    "Boot Barn":"/g/11byc_x_1d",
-    "Work Boots":"Work Boots",
-    "Steel Toe Boots":"/m/01x101",
-    "Timberland Powertrain":"Timberland Powertrain",
-    "Safety Toe":"Safety Toe",
-    "Workwear":"/m/026lc7w",
-    "Nurse shoes":"Nurse shoes",
-    "Healthcare Discount":"Healthcare Discount",
-    "Responders Discount":"Responders Discount",
-    "Trade School":"/m/030x63",
-    "Home Improvement":"/m/03n2_q",
-    "DIY":"/m/017rcq"
+    # "UGG": "/m/06wccjq",
+    # "Dr Martens": "/m/01lsm6",
+    # "Merrell": "/m/0kqrz3",
+    # "The North Face": "/m/04n92b",
+    # "Patagonia": "/m/0g152j",
+    # "Allbirds": "/g/11g6j4k3hl",
+    # "Vans": "/m/04kbwy",
+    # "Amazon": "/m/0mgkg ",
+    # "Walmart": "/m/0841v",
+    # "Target": "/m/01b39j",
+    # "Zappos": "/m/02dfb9",
+    # "Foot Locker": "/m/08fhy9",
+    # "Journeys": "/m/03cbgd",
+    # "DSW": "/m/0flp70",
+    # "Nordstrom": "/m/01fc_q",
+    # "Macy's": "/m/01pkxd ",
+    # "REI": "/m/02nx4d",
+    # "Dick's Sports": "/m/06fgv_",
+    # "Boot": "/m/01b638",
+    # "Outerwear": "Outerwear",
+    # "Sneakers":"/m/09kjlm",
+    # "Boat Shoes":"/m/05q55b9",
+    # "Sandals":"/m/03nfch",
+    # "Hiking":"/m/012v4j",
+    # "Sustainability":"/m/0hkst",
+    # "Back to school":"Back to school",
+    # "Jimmy Choo":"/m/0hkst",
+    # "Timberland PRO":"Timberland PRO",
+    # "Red Wing":"/m/0603n6",
+    # "Carhartt":"/m/08vntw",
+    # "Wolverine":"/m/06ddr7",
+    # "Dickies":"/m/03pjr5",
+    # "Duluth":"/g/11f30mhkr2",
+    # "Lowe's":"/m/037922",
+    # "Home Depot":"/m/01zj1t",
+    # "Grainger":"/m/0cp307",
+    # # "Bobs":"Bobs",
+    # "Boot Barn":"/g/11byc_x_1d",
+    # "Work Boots":"Work Boots",
+    # "Steel Toe Boots":"/m/01x101",
+    # "Timberland Powertrain":"Timberland Powertrain",
+    # "Safety Toe":"Safety Toe",
+    # "Workwear":"/m/026lc7w",
+    # "Nurse shoes":"Nurse shoes",
+    # "Healthcare Discount":"Healthcare Discount",
+    # "Responders Discount":"Responders Discount",
+    # "Trade School":"/m/030x63",
+    # "Home Improvement":"/m/03n2_q",
+    # "DIY":"/m/017rcq"
     }
 
 lst_keywords = []
