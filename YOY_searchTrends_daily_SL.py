@@ -72,7 +72,7 @@ def calcYOY(keyword, this_start_date = this_start_date, this_end_date = this_end
     
 kw_dict = {
     "Timberland": "/m/05kv16",
-    "Timberland Boots": "Timberland Boots"
+    "Timberland Boots": "Timberland Boots",
     "UGG": "/m/06wccjq",
     "Dr Martens": "/m/01lsm6",
     "Merrell": "/m/0kqrz3",
